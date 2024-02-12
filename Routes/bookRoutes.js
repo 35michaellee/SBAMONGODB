@@ -12,7 +12,11 @@ router.get('/', (req, res) => {
 router.post('/createBook', bookController.createBook);
 
 router.get('/getAllBooks', bookController.getAllBooks);
- 
+router.post('/resetAllBooks', bookController.resetAllBooks
+);
+router.patch('/books/:id', bookController.updateBook);
+router.delete('/books/:id', bookController.deleteBook);
+
   
   
 module.exports = router;
